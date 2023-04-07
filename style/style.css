@@ -17,6 +17,13 @@ body {
   overflow: hidden;
 }
 
+#playButtons {
+  margin: 0 auto;
+  padding: 200px;
+  text-align: center;
+  position: relative;
+}
+
 .container div.six {
   top: 10vh;
   z-index: 1;
@@ -227,7 +234,7 @@ body {
   font-weight: lighter;
 }
 
-#replay {
+#replay,#unmuteButton,#muteButton {
   z-index: 3;
   cursor: pointer;
 }

@@ -52,7 +52,7 @@ const animationTimeline = () => {
     skewX: "-15deg"
   };
 
-  const tl = new TimelineMax();
+  const tl = new TimelineMax({paused: true});
 
   tl
     .to(".container", 0.1, {
@@ -300,6 +300,21 @@ const animationTimeline = () => {
   replyBtn.addEventListener("click", () => {
     tl.restart();
   });
+
+  const unmuteButton = document.getElementById("unmuteButton");
+  unmuteButton.addEventListener('click', function() {
+    document.getElementById("audioButton").muted = false;
+    document.getElementById("playButtons").style.display = "none";
+    tl.play();
+  });
+
+  const muteButton = document.getElementById("muteButton");
+  muteButton.addEventListener('click', function() {
+    document.getElementById("audioButton").muted = true;
+    document.getElementById("playButtons").style.display = "none";
+    tl.play();
+  });
+
 };
 
 // Run fetch and animation in sequence
