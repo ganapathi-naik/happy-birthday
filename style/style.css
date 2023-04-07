@@ -232,6 +232,12 @@ body {
   cursor: pointer;
 }
 
+#replay:hover {
+  z-index: 3;
+  cursor: pointer;
+  color: rgb(23, 204, 192);
+}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
