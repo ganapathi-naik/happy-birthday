@@ -19,7 +19,7 @@ const fetchData = () => {
         // Run amimation if so
         if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
           animationTimeline();
-        } 
+        }
       });
     });
 };
@@ -52,8 +52,7 @@ const animationTimeline = () => {
     skewX: "-15deg"
   };
 
-  const tl = new TimelineMax({paused: true});
-
+  const tl = new TimelineMax();
   tl
     .to(".container", 0.1, {
       visibility: "visible"

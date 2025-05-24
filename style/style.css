@@ -310,17 +310,3 @@ body {
     font-weight: lighter;
   }
 }
-
-h1 {
-  font-size: 2em;
-  text-align: center;
-  margin: 20px 0;
-}
-
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 1.5em;
-    padding: 0 10px;
-  }
-}
